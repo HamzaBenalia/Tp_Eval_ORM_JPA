@@ -1,11 +1,9 @@
 package com.epsi.petStore.domain;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.engine.internal.Cascade;
+
 
 import java.time.LocalDateTime;
 

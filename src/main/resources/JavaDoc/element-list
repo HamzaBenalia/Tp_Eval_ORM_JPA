@@ -1,0 +1,4 @@
+com.epsi.petStore
+com.epsi.petStore.domain
+com.epsi.petStore.repository
+com.epsi.petStore.service
