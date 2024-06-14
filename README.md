@@ -75,7 +75,9 @@ Vous avez deux options pour consulter les détails des animaux :
 
 Pour consulter la documentation JavaDoc générée pour ce projet, veuillez suivre le lien ci-dessous :
 
-![Image Actuator]([https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/Actuator%20image%20.png](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/javaDoc.png))
+![Image Actuator](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/javaDoc.png)
+
+
 [JavaDoc](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/JavaDoc/allclasses-index.html)
 
   
