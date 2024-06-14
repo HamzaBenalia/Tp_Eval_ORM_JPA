@@ -11,6 +11,10 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votr
 - Java Development Kit (JDK) 17
 - Apache Maven pour la gestion des dépendances
 - MySQL Server pour la base de données
+- Spring data Jpa
+- Lombok (Economie en code)
+- spring-boot-devtools
+- Actuator (Health, metrics...)
 
 ## Installation et Configuration
 
