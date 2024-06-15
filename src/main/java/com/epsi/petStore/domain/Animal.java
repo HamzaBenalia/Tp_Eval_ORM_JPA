@@ -23,9 +23,9 @@ public class Animal {
     @Id
     @GeneratedValue
     private Long id;
-
+    @Column(name = "birth")
     private LocalDateTime birth;
-
+    @Column(name = "color")
     private String Color;
 
     /**

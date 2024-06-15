@@ -1,4 +1,5 @@
 package com.epsi.petStore.domain;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -16,6 +17,7 @@ import lombok.Setter;
 public class Fish extends Animal {
 
 @Enumerated(EnumType.STRING)
+@Column(name="livingEnv")
 private FishLivEnv livingEnv;
 
 }

@@ -18,14 +18,14 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(name="code")
     private String code;
-
+    @Column(name="label")
     private String label;
-
+    @Column(name="type")
     @Enumerated(EnumType.STRING)
     private ProdType type;
-
+    @Column(name="price")
     private Double price;
 
 

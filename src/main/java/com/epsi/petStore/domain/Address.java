@@ -1,7 +1,5 @@
 package com.epsi.petStore.domain;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,13 +18,13 @@ public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(name = "number")
     private String number;
-
+    @Column(name = "street")
     private String street;
-
+    @Column(name = "zip_code")
     private String zipCode;
-
+    @Column(name = "city")
     private String city;
 
     /**
