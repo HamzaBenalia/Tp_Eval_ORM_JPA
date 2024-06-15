@@ -6,7 +6,7 @@ Ce projet de gestion d'animaleries est développé avec Java et Spring Boot, uti
 
 ## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
+Avant de commencer, assurez-vous d'avoir les outils et les dépendances suivants installés sur votre machine :
 
 - Java Development Kit (JDK) 17
 - Apache Maven pour la gestion des dépendances
@@ -23,7 +23,7 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votr
 Clonez le repository GitHub sur votre machine locale :
 
 ```bash
-git clone https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA
+git clone https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA.git
 
 ```
 
@@ -31,7 +31,7 @@ git clone https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA
 
 Configurez votre base de données MySQL et mettez à jour les informations de connexion dans le fichier application.properties situé dans src/main/resources.
 
-spring.datasource.url=jdbc:mysql://localhost:3306/nom_de_la_base_de_donnees
+spring.datasource.url=jdbc:mysql://localhost:3306/nom_de_la_base_de_donnees par exemple : petStore
 spring.datasource.username=votre_utilisateur
 spring.datasource.password=votre_mot_de_passe
 
@@ -63,8 +63,10 @@ Vous avez deux options pour consulter les détails des animaux :
   
    -![Choix d'animalerie](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/choix%20d'animalerie.png)
 
+   -[Choix d'animalerie](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/Output.png)
 
-2. **Via un navigateur web :**
+
+3. **Via un navigateur web :**
    - Vous pouvez accéder à toutes les informations telles que les détails de l'animalerie, son manager, les animaux et les produits en utilisant l'URL fournie.
    - L'URL à utiliser se trouve dans l'image ci-dessous.
   
