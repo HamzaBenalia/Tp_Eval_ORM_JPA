@@ -1,6 +1,7 @@
 package com.epsi.petStore.repository;
 import com.epsi.petStore.domain.Animal;
 import com.epsi.petStore.domain.PetStore;
+import com.epsi.petStore.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -21,6 +22,10 @@ public interface PetStoreRepository extends JpaRepository<PetStore, Long> {
 
     @Query("SELECT p.animals FROM PetStore p WHERE p.name = :name")
     Set<Animal> findAnimalsByPetStoreName(@Param("name") String name);
+
+
+    @Query("SELECT p.products FROM PetStore p WHERE p.name = :petStoreName")
+    Set<Product> findProductsByPetStoreName(@Param("petStoreName") String petStoreName);
 
 }
 

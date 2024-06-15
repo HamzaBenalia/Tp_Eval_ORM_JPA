@@ -3,6 +3,9 @@ import com.epsi.petStore.domain.Product;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * Repository interface for {@link Product} instances. Provides basic CRUD operations
  * due to the extension of {@link CrudRepository}.

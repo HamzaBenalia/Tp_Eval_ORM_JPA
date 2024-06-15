@@ -1,33 +1,21 @@
 package com.epsi.petStore.service;
-
-
 import com.epsi.petStore.domain.*;
 import com.epsi.petStore.repository.AddressRepository;
 import com.epsi.petStore.repository.AnimalRepository;
 import com.epsi.petStore.repository.PetStoreRepository;
 import com.epsi.petStore.repository.ProductRepository;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
-import java.util.Set;
+
 
 @Service
 public class PetStoreService {
 
-
     private PetStoreRepository petStoreRepository;
-
     private ProductRepository productRepository;
-
     private AnimalRepository animalRepository;
-
     private AddressRepository addressRepository;
-
 
     @Autowired
     public PetStoreService(PetStoreRepository petStoreRepository, ProductRepository productRepository, AnimalRepository animalRepository, AddressRepository addressRepository) {
@@ -36,7 +24,6 @@ public class PetStoreService {
         this.animalRepository = animalRepository;
         this.addressRepository = addressRepository;
     }
-
 
     /**
      * Initializes data for three predefined pet stores: "feedYourPet", "cleanYourPet", and "playWithYourPet".
@@ -142,8 +129,18 @@ public class PetStoreService {
         product5.setLabel("Graines pour oiseaux");
         product5.setPrice(5.0);
         product5.setType(ProdType.FOOD);
-        petStoreAccessories.getProducts().add(product5);
+        petStoreFood.getProducts().add(product5);
         productRepository.save(product5);
+        petStoreRepository.save(petStoreFood);
+
+
+        Product product10 = new Product();
+        product10.setCode("99999");
+        product10.setLabel("Patéé chat");
+        product10.setPrice(10.0);
+        product10.setType(ProdType.FOOD);
+        petStoreFood.getProducts().add(product10);
+        productRepository.save(product10);
         petStoreRepository.save(petStoreFood);
 
         Product product6 = new Product();
@@ -174,6 +171,15 @@ public class PetStoreService {
         productRepository.save(product3);
         petStoreRepository.save(petStoreCleaning);
 
+        Product product7 = new Product();
+        product7.setCode("44444");
+        product7.setLabel("pommade cicatrisante chat");
+        product7.setPrice(20.0);
+        product7.setType(ProdType.CLEANING);
+        petStoreCleaning.getProducts().add(product7);
+        productRepository.save(product7);
+        petStoreRepository.save(petStoreCleaning);
+
 
         Product product2 = new Product();
         product2.setCode("2222");
@@ -191,7 +197,7 @@ public class PetStoreService {
          * @param animal  to be created and saved
          */
         Animal blackHorse = new Animal();             // adding a horse
-        blackHorse.setBirth(LocalDateTime.of(2024, 2, 14, 11, 13));
+        blackHorse.setBirth(LocalDateTime.of(2024, 5, 20, 11, 13));
         blackHorse.setColor("Black");
         blackHorse.setPetStore(petStoreFood);
         animalRepository.save(blackHorse);
@@ -206,8 +212,8 @@ public class PetStoreService {
 
         Cat tommyCat = new Cat();                     // adding a cat to the dataBase
         tommyCat.setChipId("1");
-        tommyCat.setBirth(LocalDateTime.of(2024, 2, 14, 11, 13));
-        tommyCat.setColor("Black");
+        tommyCat.setBirth(LocalDateTime.of(2024, 7, 30, 11, 13));
+        tommyCat.setColor("Grey");
         tommyCat.setPetStore(petStoreFood);
         animalRepository.save(tommyCat);
 
@@ -215,7 +221,7 @@ public class PetStoreService {
         Cat Katy = new Cat();                     // adding a cat to the dataBase
         Katy.setChipId("2");
         Katy.setBirth(LocalDateTime.of(2024, 2, 20, 11, 13));
-        Katy.setColor("Black");
+        Katy.setColor("Yellow");
         Katy.setPetStore(petStoreFood);
         animalRepository.save(Katy);
 
@@ -263,8 +269,6 @@ public class PetStoreService {
         fish3.setColor("Red");  // Couleur du poisson
         fish3.setPetStore(petStoreAccessories);  // Association avec le troisième PetStore
         animalRepository.save(fish3);
-
-
     }
 
 }
