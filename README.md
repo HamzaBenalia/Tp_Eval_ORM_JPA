@@ -63,7 +63,7 @@ Vous avez deux options pour consulter les détails des animaux :
   
    -![Choix d'animalerie](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/choix%20d'animalerie.png)
 
-   -[Choix d'animalerie](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/Output.png)
+   -[Choix](https://github.com/HamzaBenalia/Tp_Eval_ORM_JPA/blob/main/src/main/resources/images/Output.png)
 
 
 3. **Via un navigateur web :**
